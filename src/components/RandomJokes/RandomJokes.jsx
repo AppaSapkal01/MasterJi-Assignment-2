@@ -2,14 +2,14 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import styles from "./randomJokes.Module.css";
 import { IoMdArrowBack } from "react-icons/io";
-import UserPic from "../assets/dummyUser.png";
-import CommentIcon from '../assets/CommentIcon.png'
-import RepostIcon from '../assets/RepostIcon.png';
-import HearLikeIcon from '../assets/HeartLikeIcon.png';
-import BookmarkIcon from '../assets/BookmarkIcon.png';
-import UploadIcon from '../assets/UploadIcon.png'
-import VerifiedIcon from '../assets/VerifiedTickIcon.png';
-import ChaiCodeLogo from '../assets/ChaiCodeLogo.png'
+import UserPic from "../../assets/dummyUser.png";
+import CommentIcon from '../../assets/CommentIcon.png'
+import RepostIcon from '../../assets/RepostIcon.png';
+import HearLikeIcon from '../../assets/HeartLikeIcon.png';
+import BookmarkIcon from '../../assets/BookmarkIcon.png';
+import UploadIcon from '../../assets/UploadIcon.png'
+import VerifiedIcon from '../../assets/VerifiedTickIcon.png';
+import ChaiCodeLogo from '../../assets/ChaiCodeLogo.png'
 const RandomJokes = () => {
   const [jokes, setJokes] = useState("");
   const [time, setTime] = useState("");
@@ -55,6 +55,10 @@ const RandomJokes = () => {
     generateRandomValues();
 
   }, []);
+
+  
+
+
   return (
     <>
       <main className={styles.container}>

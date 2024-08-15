@@ -20,27 +20,26 @@
 .cardList {
   display: flex;
   gap: 20px;
-  overflow-x: auto; /* Enable horizontal scrolling */
-  padding-bottom: 1rem; /* Add padding to create space between cards and scrollbar */
+  overflow-x: auto; 
+  padding-bottom: 1rem; 
 }
 
-/* Custom scrollbar */
 .cardList::-webkit-scrollbar {
-  height: 12px; /* Adjust the height of the scrollbar */
+  height: 12px; 
 }
 
 .cardList::-webkit-scrollbar-track {
-  background: #f1f1f1; /* Background of the scrollbar track */
+  background: #f1f1f1; 
   border-radius: 10px;
 }
 
 .cardList::-webkit-scrollbar-thumb {
-  background: #888; /* Color of the scrollbar thumb */
+  background: #888; 
   border-radius: 10px;
 }
 
 .cardList::-webkit-scrollbar-thumb:hover {
-  background: #555; /* Color when hovered */
+  background: #555; 
 }
 
 .catCard {
@@ -58,7 +57,7 @@
   height: 40%;
   object-fit: cover;
   border-top-left-radius: 18px;
-  border-top-right-radius: 18px; /* Fixed the typo here */
+  border-top-right-radius: 18px; 
 }
 
 .catInfo {
@@ -137,35 +136,10 @@
   cursor: pointer;
 }
 
-.loadingCard {
-  width: 200px;
-  height: 250px;
-  background-color: #e0e0e0;
-  border-radius: 10px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  flex-shrink: 0;
-}
-
-.loadingImage {
-  width: 100%;
-  height: 150px;
-  background-color: #ccc;
-}
-
-.loadingText {
-  width: 80%;
-  height: 20px;
-  background-color: #ccc;
-  margin-top: 10px;
-}
-
 .logo {
   width: 60px;
   height: 60px;
   position: absolute;
-  left: 95%;
+  left: 90%;
   top: 2%;
 }

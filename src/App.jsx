@@ -1,5 +1,5 @@
 // import CatsListing from "./components/CatsListing"
-import RandomJokes from "./components/RandomJokes"
+import RandomJokes from "./components/RandomJokes/RandomJokes"
 // import RandomUser from "./components/RandomUser"
 const App = () => {
   return (

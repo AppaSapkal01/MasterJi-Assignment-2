@@ -2,9 +2,9 @@ import { createRoot } from 'react-dom/client'
 // import App from './App.jsx'
 import './index.css'
 import { createBrowserRouter, RouterProvider, Navigate } from 'react-router-dom';
-import RandomUser from './components/RandomUser.jsx'
-import RandomJokes from './components/RandomJokes.jsx'
-import CatsListing from './components/CatsListing.jsx';
+import RandomUser from './components/RandomUser/RandomUser.jsx'
+import RandomJokes from './components/RandomJokes/RandomJokes.jsx'
+import CatsListing from './components/CatListing/CatsListing.jsx';
 
 const router = createBrowserRouter([
   {

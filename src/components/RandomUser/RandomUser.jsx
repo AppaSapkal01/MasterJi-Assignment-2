@@ -3,17 +3,16 @@ import axios from "axios";
 import styles from "./randomUser.Module.css";
 import { IoMdArrowBack } from "react-icons/io";
 import { IoMdRefresh } from "react-icons/io";
-import ChaiCodeLogo from "../assets/ChaiCodeLogo.png";
-import LocationIcon from "../assets/LocationIcon.png";
-import PhoneIcon from "../assets/PhoneIcon.png";
+import ChaiCodeLogo from "../../assets/ChaiCodeLogo.png";
+import LocationIcon from "../../assets/LocationIcon.png";
+import PhoneIcon from "../../assets/PhoneIcon.png";
 import { FlagIcon } from "react-flag-kit";
 
 const RandomUser = () => {
-  const [user, setUser] = useState(null); // Initialize with null for conditional rendering
-  const [loading, setLoading] = useState(true); // Loading state
-
+  const [user, setUser] = useState(null); 
+  const [loading, setLoading] = useState(true); 
   const fetchUserData = async () => {
-    setLoading(true); // Set loading to true before fetching
+    setLoading(true); 
     try {
       const res = await axios.get(
         "https://api.freeapi.app/api/v1/public/randomusers/user/random"
@@ -39,7 +38,7 @@ const RandomUser = () => {
     } catch (error) {
       console.log(error);
     } finally {
-      setLoading(false); // Set loading to false after fetching
+      setLoading(false); 
     }
   };
 
@@ -48,7 +47,7 @@ const RandomUser = () => {
   }, []);
 
   if (loading) {
-    return <p>Loading...</p>; // Simple loading indicator
+    return <p>Loading...</p>; 
   }
 
   return (
