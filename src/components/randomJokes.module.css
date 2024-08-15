@@ -1,0 +1,149 @@
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.card {
+  width: 33rem;
+  min-height: 15rem;
+  background-color: #000000;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.topSection {
+  width: 110px;
+  height: 35px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-left: 1rem;
+  font-family: 'Inter';
+  font-weight: 700;
+  font-size: 17px;
+}
+
+.userDetails {
+  width: 90%;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0.5rem 1.5rem;
+}
+
+.profilePic {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+}
+
+.details {
+  display: flex;
+  gap: 1rem;
+}
+
+.name {
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+.name > img {
+    width: 14px;
+    height: 14px;
+    object-fit: contain;
+    margin-left: 0.2rem;
+}
+
+.username {
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: -2%;
+}
+
+.more {
+    color: #A0A0A0;
+    font-size: 1.3rem;
+}
+
+.jokeContent {
+  width: 90%;
+  margin: 0.5rem 1.5rem;
+  font-family: "Inter";
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: -2%;
+}
+
+.postDetails {
+  width: 205px;
+  height: 15px;
+  margin: 1rem 1.5rem 0.4rem;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 12px;
+  letter-spacing: -2%;
+}
+
+.views {
+  font-weight: 600;
+}
+
+.hrLine {
+  width: 90%;
+  margin: 0.5rem auto;
+  border-color: #71767b;
+}
+
+.activitySection {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.activity {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: 'Inter';
+    font-weight: 400px;
+    font-size: 10px;
+    line-height: 9.70px;
+    letter-spacing: -2%;
+    color: #71767B;
+}
+
+
+.activity > img {
+    width: 15px;
+    height: 15px;
+    margin: 0 0.2rem;
+    object-fit: contain;
+}
+
+.copyrights {
+    width: 5rem;
+    font-family: 'Inter';
+    font-size: 10px;
+    line-height: 12px;
+    margin: 1rem auto;
+    color: #71767B;
+}
+
+.logo {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  left: 95%;
+  top: 90%;
+}

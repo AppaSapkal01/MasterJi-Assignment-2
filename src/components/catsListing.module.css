@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=DM+Serif+Text:ital@0;1&family=Donegal+One&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+
+.catContainer {
+  width: 100%;
+  height: 100vh;
+  padding: 1.5rem 2rem 0;
+  background-color: #555;
+}
+
+.heading {
+  font-family: "DM Sans";
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 62px;
+  letter-spacing: -4%;
+  margin-bottom: 1rem;
+  color: #ffffff;
+}
+
+.cardList {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto; /* Enable horizontal scrolling */
+  padding-bottom: 1rem; /* Add padding to create space between cards and scrollbar */
+}
+
+/* Custom scrollbar */
+.cardList::-webkit-scrollbar {
+  height: 12px; /* Adjust the height of the scrollbar */
+}
+
+.cardList::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Background of the scrollbar track */
+  border-radius: 10px;
+}
+
+.cardList::-webkit-scrollbar-thumb {
+  background: #888; /* Color of the scrollbar thumb */
+  border-radius: 10px;
+}
+
+.cardList::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Color when hovered */
+}
+
+.catCard {
+  width: 375px;
+  height: 580px;
+  flex-shrink: 0;
+  background-color: #f8f9fa;
+  border-radius: 18px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.catImage {
+  width: 100%;
+  height: 40%;
+  object-fit: cover;
+  border-top-left-radius: 18px;
+  border-top-right-radius: 18px; /* Fixed the typo here */
+}
+
+.catInfo {
+  height: 60%;
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.name {
+  font-family: "DM Sans";
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 36px;
+  letter-spacing: -4%;
+}
+
+.description {
+  width: 90%;
+  font-family: "DM Sans";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: -4%;
+  text-align: justify;
+  margin-bottom: 0.7rem;
+}
+
+.originInfo,
+.lifeSpanInfo {
+  display: flex;
+  gap: 4rem;
+  font-family: "DM Sans";
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+}
+
+.originLabel,
+.lifeSpanLabel {
+  font-style: italic;
+  font-weight: 500;
+}
+
+.lifeSpanLabel {
+  margin-right: -1.5rem;
+}
+
+.learnMore {
+  align-self: flex-start;
+  text-decoration: none;
+  font-family: "DM Sans";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: -4%;
+}
+.temperamentSection {
+  height: 50px;
+  font-family: "DM Sans";
+  margin-bottom: 0.2.5rem;
+}
+
+.temperamentLabel {
+  font-style: italic;
+  font-weight: 500;
+  margin-bottom: 0.2rem;
+}
+
+.temperamentButton {
+  background-color: #efefef;
+  margin-right: 5px;
+  border-radius: 20px;
+  padding: 0.1rem 0.5rem;
+  margin-bottom: 0.2rem;
+  cursor: pointer;
+}
+
+.loadingCard {
+  width: 200px;
+  height: 250px;
+  background-color: #e0e0e0;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.loadingImage {
+  width: 100%;
+  height: 150px;
+  background-color: #ccc;
+}
+
+.loadingText {
+  width: 80%;
+  height: 20px;
+  background-color: #ccc;
+  margin-top: 10px;
+}
+
+.logo {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  left: 95%;
+  top: 2%;
+}

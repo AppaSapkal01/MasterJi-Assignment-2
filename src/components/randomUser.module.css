@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Donegal+One&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=DM+Serif+Text:ital@0;1&family=Donegal+One&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+
+.container {
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profileCard {
+  width: 22rem;
+  height: 38rem;
+  border-radius: 0.75rem;
+  background-color: #b6b3f3;
+  position: relative;
+}
+
+.headerSection {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.headerLabel {
+  font-family: "DM Serif Text", serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.headerIcons {
+  width: 24px;
+  height: 24px;
+  background-color: transparent;
+}
+
+.userProfile {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  text-align: center;
+  position: relative;
+  padding: 1rem;
+  gap: 0.6rem;
+}
+
+.title {
+  font-family: "DM Serif Text", serif;
+  font-weight: 400;
+  font-size: 8px;
+  background-color: #000000;
+  color: white;
+  border-radius: 0.75rem;
+  position: absolute;
+  left: 218px;
+  font-size: 12px;
+  padding: 0.1rem 0.5rem;
+}
+
+.profileImg {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.name {
+  font-family: "Donegal One", serif;
+  font-weight: 400;
+  font-size: 24px;
+}
+
+.username {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+}
+
+.locationSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.hrLine {
+  width: 90%;
+  margin: 0.5rem auto;
+  border-color: #00000014;
+}
+
+a {
+  color: #000000;
+  text-decoration: none;
+  font-family: "DM Sans";
+  font-size: 0.7rem;
+}
+
+.coordinates,
+.callMe {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-family: "DM Sans", sans-serif;
+}
+
+.contactIcons {
+  width: 20px;
+  height: 20px;
+  background-color: #000000;
+  color: white;
+  border-radius: 50%;
+}
+
+.userDetails {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  margin-left: 0.5rem;
+}
+
+.items {
+  padding: 0.7rem;
+}
+
+.label {
+  font-size: 9px;
+  font-family: "DM Sans";
+  margin-bottom: 0.4rem;
+}
+
+.logo {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  left: 284px;
+  top: 32rem;
+}
+
+.copyrights {
+  width: 61px;
+  height: 10px;
+  font-size: 8px;
+  color: #ffffff;
+  position: absolute;
+  left: 147px;
+  top: 36rem;
+}
